@@ -90,17 +90,10 @@
           new QuestionModel({
             id: 'first_name',
             tagline: 'Hi! Welcome to our demo survey 😊',
-            title: 'What is your first name?',
-            type: QuestionType.Text,
+            title: 'CPF?',
+            type: QuestionType.Phone,
             required: true,
-            placeholder: 'Start typing here...',
-            validator: (value, questionModel) => {
-              if (value !== "Arthur") {
-                questionModel.description = "Nao sou eu"
-                return false
-              }
-              return true
-            }
+            mask: ['###.###.###-##', '###.###.###/####-##'],
           }),
           new QuestionModel({
             id: 'email',

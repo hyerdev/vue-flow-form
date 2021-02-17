@@ -49,7 +49,7 @@
   import BaseType from './BaseType.vue'
   import { QuestionType } from '../../models/QuestionModel'
   import LanguageModel from '../../models/LanguageModel'
-  import TheMask from 'vue-the-mask/src/component'
+  import TheMask from 'hyer-the-mask/src/component'
 
   export default {
     extends: BaseType,
@@ -66,12 +66,20 @@
     }, 
 
     methods: {
-      validate() {
-        if (this.question.mask && this.hasValue && this.dataValue.length !== this.question.mask.length) {
-          return false
-        }
+      validate() {        
+        if (Array.isArray(this.question.mask)) {
+          for(let i = 0; i < this.question.mask.length; i++) {
+            if (this.question.mask && this.hasValue && this.dataValue.length === this.question.mask[i].length) {
+              return !this.question.required || this.hasValue
+            }
+          }
+        } else {
+          if (this.question.mask && this.hasValue && this.dataValue.length !== this.question.mask.length) {
+            return false
+          }
 
-        return !this.question.required || this.hasValue
+          return !this.question.required || this.hasValue
+        }
       }
     }
   }
