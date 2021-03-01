@@ -14,41 +14,37 @@
   -o-font-smoothing: antialiased;
 }
 
-@media screen and (max-width:1023px){
+@media screen and (max-width: 1023px) {
   .vff,
   .vff-footer {
     font-size: 15px;
   }
-
 }
 
-@media screen and (min-width:1366px) {
+@media screen and (min-width: 1366px) {
   .vff,
   .vff-footer {
     font-size: 18px;
   }
-
 }
 
-@media screen and (min-width:1920px) {
+@media screen and (min-width: 1920px) {
   .vff {
     font-size: 22px;
   }
-
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width: 2560px) {
   .vff {
     font-size: 26px;
   }
-
 }
 
 /*
   global
 */
 
-.vff hr{
+.vff hr {
   box-sizing: content-box;
   overflow: visible;
   height: 0;
@@ -119,7 +115,7 @@
 
 .vff .disabled,
 .vff [disabled] {
-  opacity: .4;
+  opacity: 0.4;
   user-select: none;
   pointer-events: none;
   cursor: not-allowed;
@@ -154,11 +150,11 @@
   box-sizing: border-box;
 }
 
-header.vff-header + .vff{
+header.vff-header + .vff {
   margin-top: 16vh;
 }
 
-header.vff-header + .vff.vff-not-standalone{
+header.vff-header + .vff.vff-not-standalone {
   margin-top: 0;
 }
 
@@ -170,7 +166,7 @@ header.vff-header + .vff.vff-not-standalone{
 
 /*container*/
 .vff .f-container,
-header.vff-header .f-container{
+header.vff-header .f-container {
   padding: 0 8%;
   width: 100%;
 }
@@ -183,7 +179,7 @@ header.vff-header .f-container{
 /*header*/
 header.vff-header {
   line-height: 1;
-  padding: .9em 10% .8em;
+  padding: 0.9em 10% 0.8em;
   box-sizing: border-box;
   position: static;
   width: 100%;
@@ -291,13 +287,13 @@ header.vff-header svg.f-logo {
   border: none;
   outline: 0;
   cursor: pointer;
-  padding: .6em 1.4em;
+  padding: 0.6em 1.4em;
   text-align: center;
   display: inline-block;
   min-height: 44px;
   white-space: pre-wrap;
   max-width: 100%;
-} 
+}
 
 .vff .o-btn-action {
   z-index: 1;
@@ -314,16 +310,16 @@ header.vff-header svg.f-logo {
 }
 
 .vff .f-enter-desc {
-  font-size: .9em;
+  font-size: 0.9em;
   display: inline-block;
-  margin-left: .6em;
-  margin-top: .7em;
+  margin-left: 0.6em;
+  margin-top: 0.7em;
 }
 
 .vff span.faux-form {
   border-bottom: 1px solid;
   display: inline-block;
-  margin-right: .2em;
+  margin-right: 0.2em;
   margin-left: 0;
   position: relative;
   white-space: nowrap;
@@ -338,24 +334,24 @@ header.vff-header svg.f-logo {
   border-radius: 0;
   border: 0;
   cursor: pointer;
-  font-size: .5em;
+  font-size: 0.5em;
   line-height: 1.32;
   margin: 0;
   opacity: 0;
   outline: 0;
-  padding: .6em 8px;
+  padding: 0.6em 8px;
   width: 100%;
   position: absolute;
   z-index: 1;
 }
 
-.vff input[type=text],
-.vff input[type=number],
-.vff input[type=tel],
-.vff input[type=email],
-.vff input[type=url],
-.vff input[type=password],
-.vff input[type=date],
+.vff input[type="text"],
+.vff input[type="number"],
+.vff input[type="tel"],
+.vff input[type="email"],
+.vff input[type="url"],
+.vff input[type="password"],
+.vff input[type="date"],
 .vff textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -365,10 +361,10 @@ header.vff-header svg.f-logo {
   border-bottom: 1px solid;
   border-radius: 0;
   line-height: 1.48;
-  margin: 0 .6em 0 0;
+  margin: 0 0.6em 0 0;
   outline: 0;
-  padding: .16em .2em;
-  font-size: .72em;
+  padding: 0.16em 0.2em;
+  font-size: 0.72em;
   font-weight: 900;
 }
 
@@ -383,18 +379,18 @@ header.vff-header svg.f-logo {
   resize: vertical;
 }
 
-.vff .f-full-width input[type=text],
-.vff .f-full-width input[type=number],
-.vff .f-full-width input[type=tel],
-.vff .f-full-width input[type=email],
-.vff .f-full-width input[type=url],
-.vff .f-full-width input[type=password],
-.vff .f-full-width input[type=date],
+.vff .f-full-width input[type="text"],
+.vff .f-full-width input[type="number"],
+.vff .f-full-width input[type="tel"],
+.vff .f-full-width input[type="email"],
+.vff .f-full-width input[type="url"],
+.vff .f-full-width input[type="password"],
+.vff .f-full-width input[type="date"],
 .vff .f-full-width textarea,
-.vff .f-full-width span.faux-form{
+.vff .f-full-width span.faux-form {
   width: 100%;
-  padding-left: .16em;
-  padding-right: .16em;
+  padding-left: 0.16em;
+  padding-right: 0.16em;
 }
 
 .vff .f-required {
@@ -405,7 +401,7 @@ header.vff-header svg.f-logo {
   margin-top: 26px;
 }
 
-.vff span.f-sub + .f-answer.f-full-width{
+.vff span.f-sub + .f-answer.f-full-width {
   margin-top: 22px;
 }
 
@@ -421,14 +417,14 @@ header.vff-header svg.f-logo {
   padding-bottom: 4px;
 }
 
-.vff span.f-answered{
+.vff span.f-answered {
   font-weight: 900;
 }
 
 /*faux select arrow*/
 .vff .f-arrow-down {
   display: inline-block;
-  margin-left: .2em;
+  margin-left: 0.2em;
   pointer-events: none;
   width: 18px;
   height: 100%;
@@ -444,21 +440,21 @@ header.vff-header svg.f-logo {
 }
 
 /* ios datepicker */
-.vff.vff-is-ios  .field-datetype:not(.f-has-value) .f-answer > span {
+.vff.vff-is-ios .field-datetype:not(.f-has-value) .f-answer > span {
   position: relative;
   top: 0;
   left: 0;
 }
 
-.vff.vff-is-ios  .field-datetype:not(.f-has-value) .f-answer > span::before {
+.vff.vff-is-ios .field-datetype:not(.f-has-value) .f-answer > span::before {
   position: absolute;
   content: attr(data-placeholder);
   display: block;
   pointer-events: none;
-  padding: 0.12em .2em;
+  padding: 0em 0.2em;
 }
 
-.vff.vff-is-ios input[type=date] {
+.vff.vff-is-ios input[type="date"] {
   height: 32px;
   display: block;
 }
@@ -467,19 +463,19 @@ header.vff-header svg.f-logo {
   links
 */
 
-.vff a.f-link, 
+.vff a.f-link,
 .vff .field-submittype .f-section-wrap a {
   color: inherit;
   border-bottom: 1px dotted;
   word-break: break-word;
 }
 
-.vff a.f-link:hover, 
-.vff a.f-link:active,  
-.vff .field-submittype .f-section-wrap a:hover, 
+.vff a.f-link:hover,
+.vff a.f-link:active,
+.vff .field-submittype .f-section-wrap a:hover,
 .vff .field-submittype .f-section-wrap a:active {
- color: inherit; 
- border-bottom: none;
+  color: inherit;
+  border-bottom: none;
 }
 
 /*
@@ -498,7 +494,7 @@ header.vff-header svg.f-logo {
 .vff h1,
 .vff .fh1 {
   font-weight: 900;
-  font-size: 3.0em;
+  font-size: 3em;
   margin: 0.67em 0;
 }
 
@@ -521,7 +517,7 @@ header.vff-header svg.f-logo {
 
 .vff .fh1,
 .vff .fh2,
-.vff .fh3{
+.vff .fh3 {
   display: block;
 }
 
@@ -533,8 +529,8 @@ header.vff-header svg.f-logo {
 }
 
 .vff .fh2 span.f-tagline,
-.vff .fh2 span.f-sub{
-  font-size: .51em;
+.vff .fh2 span.f-sub {
+  font-size: 0.51em;
 }
 
 .vff span.f-tagline,
@@ -548,10 +544,10 @@ header.vff-header svg.f-logo {
 }
 
 .vff span.f-sub span:not(.f-string-em) {
-  margin-right: .4em;
+  margin-right: 0.4em;
 }
 
-.vff span.f-sub span.f-help{
+.vff span.f-sub span.f-help {
   display: block;
 }
 
@@ -560,7 +556,7 @@ header.vff-header svg.f-logo {
 }
 
 .vff span.f-text {
-  margin-right: .6em;
+  margin-right: 0.6em;
 }
 
 /*description*/
@@ -587,8 +583,8 @@ header.vff-header svg.f-logo {
 }
 
 .vff ul.f-radios li {
-  padding: .6em .68em;
-  margin: .5em 0 .6em;
+  padding: 0.6em 0.68em;
+  margin: 0.5em 0 0.6em;
   font-weight: 300;
   line-height: 1.24;
   cursor: default;
@@ -600,7 +596,7 @@ header.vff-header svg.f-logo {
   overflow: hidden;
 }
 
-.vff ul.f-radios li.f-other input[type=text] {
+.vff ul.f-radios li.f-other input[type="text"] {
   border-bottom: none;
   width: 100%;
   padding: 0;
@@ -616,8 +612,8 @@ header.vff-header svg.f-logo {
 
 .vff .f-radios-desc,
 .vff ul.f-radios li,
-.vff ul.f-radios li input[type=text] {
-  font-size: .4em;
+.vff ul.f-radios li input[type="text"] {
+  font-size: 0.4em;
 }
 
 .vff ul.f-radios li span.f-label {
@@ -627,6 +623,58 @@ header.vff-header svg.f-logo {
 
 .vff ul.f-radios li span.f-key {
   position: absolute;
+}
+
+.hyer-navigation {
+  left: 0;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.hyer-navigation .f-nav {
+  /* display: flex;
+  align-items: center;
+  margin-bottom: 10px; */
+  /* display: inline-block; */
+  text-align: right;
+}
+
+.hyer-navigation .f-nav a:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  align-items: flex-start;
+}
+
+.hyer-navigation .f-nav a:not(:first-child) {
+  margin-left: 12px;
+}
+
+.hyer-navigation a {
+  display: inline-block;
+  transition: fill 0.2s ease 0s;
+  width: fit-content;
+}
+
+.hyer-navigation a.f-disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.hyer-navigation .f-prev svg,
+.hyer-navigation .f-next svg {
+  width: 35.99px;
+  height: 48px;
+}
+
+.hyer-navigation .f-nav-text {
+  display: none;
+}
+
+.vff.vff-not-standalone .hyer-navigation {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*
@@ -656,14 +704,14 @@ header.vff-header svg.f-logo {
 .vff-footer .f-timer {
   font-family: monospace;
   font-size: 17px;
-  margin-left: .18em;
+  margin-left: 0.18em;
 }
 
 .vff-footer .f-prev,
 .vff-footer .f-next,
 .vff-footer .f-progress {
-  margin: 0 .18em;
-  padding: .2em .2em;
+  margin: 0 0.18em;
+  padding: 0.2em 0.2em;
 }
 
 .vff-footer .f-progress {
@@ -672,7 +720,7 @@ header.vff-header svg.f-logo {
 }
 
 .vff-footer a.f-disabled {
-  opacity: .4;
+  opacity: 0.4;
   cursor: default;
   pointer-events: none;
 }
@@ -701,7 +749,7 @@ header.vff-header svg.f-logo {
 
 .vff-footer .f-progress-bar-inner {
   height: 1px;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
 }
 
 /*section breaks*/
@@ -723,7 +771,7 @@ header.vff-header svg.f-logo {
   not-standalone option
 */
 
-.vff.vff-not-standalone{
+.vff.vff-not-standalone {
   height: 100%;
   margin-top: 0;
   margin-bottom: 0;
@@ -731,11 +779,11 @@ header.vff-header svg.f-logo {
   padding-bottom: 100px;
 }
 
-.vff.vff-not-standalone .f-container{
+.vff.vff-not-standalone .f-container {
   margin: 0;
 }
 
-.vff.vff-not-standalone .vff-footer{
+.vff.vff-not-standalone .vff-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -746,8 +794,8 @@ header.vff-header svg.f-logo {
 */
 
 .vff-animate {
-  -webkit-animation-duration: .4s;
-  animation-duration: .4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -776,7 +824,6 @@ header.vff-header svg.f-logo {
     opacity: 1;
     transform: none;
   }
-
 }
 
 .vff .f-fade-in-down {
@@ -793,7 +840,6 @@ header.vff-header svg.f-logo {
     opacity: 1;
     transform: none;
   }
-
 }
 
 .vff .f-fade-in-up {
@@ -814,7 +860,6 @@ header.vff-header svg.f-logo {
   .vff .fh2 {
     padding-right: 2.2em;
   }
-
 }
 
 @media only screen and (min-width: 1920px) {
@@ -822,7 +867,6 @@ header.vff-header svg.f-logo {
   .vff .field-submittype {
     max-width: 1160px;
   }
-
 }
 
 @media screen and (max-width: 1366px) {
@@ -831,7 +875,6 @@ header.vff-header svg.f-logo {
     padding-right: 5%;
     padding-left: 5%;
   }
-
 }
 
 @media only screen and (max-width: 1023px) {
@@ -844,7 +887,6 @@ header.vff-header svg.f-logo {
     padding-left: 0;
     padding-right: 0;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -854,24 +896,24 @@ header.vff-header svg.f-logo {
     padding-right: 0;
   }
 
-  .vff input[type=text],
-  .vff input[type=number],
-  .vff input[type=tel],
-  .vff input[type=email],
-  .vff input[type=url],
-  .vff input[type=password],
-  .vff input[type=date],
-  .vff textarea{
-    font-size: .78em;
+  .vff input[type="text"],
+  .vff input[type="number"],
+  .vff input[type="tel"],
+  .vff input[type="email"],
+  .vff input[type="url"],
+  .vff input[type="password"],
+  .vff input[type="date"],
+  .vff textarea {
+    font-size: 0.78em;
   }
-  
-  .vff .fh2 span.f-sub, 
-  .vff .fh2 span.f-tagline{
-    font-size: .58em;
+
+  .vff .fh2 span.f-sub,
+  .vff .fh2 span.f-tagline {
+    font-size: 0.58em;
   }
-  
+
   .vff .f-container,
-  header.vff-header .f-container{
+  header.vff-header .f-container {
     padding: 0 5.5%;
   }
 
@@ -879,43 +921,42 @@ header.vff-header svg.f-logo {
     min-width: 2.2em;
     padding-right: 20px;
   }
-  
-  .vff p.f-description{
+
+  .vff p.f-description {
     padding-right: 0;
   }
-
 }
 
-@media screen and (max-width:479px) {
+@media screen and (max-width: 479px) {
   .vff {
     margin-top: 10vh;
     min-height: 180px;
   }
 
-  header.vff-header + .vff{
+  header.vff-header + .vff {
     margin-top: 8vh;
   }
 
-  header.vff-header + .vff.vff-not-standalone{
+  header.vff-header + .vff.vff-not-standalone {
     margin-top: 0;
   }
-  
-  .vff input[type=text],
-  .vff input[type=number],
-  .vff input[type=tel],
-  .vff input[type=email],
-  .vff input[type=url],
-  .vff input[type=password],
-  .vff input[type=date],
+
+  .vff input[type="text"],
+  .vff input[type="number"],
+  .vff input[type="tel"],
+  .vff input[type="email"],
+  .vff input[type="url"],
+  .vff input[type="password"],
+  .vff input[type="date"],
   .vff textarea {
     line-height: 1.4;
-    padding: .16em .2em;
+    padding: 0.16em 0.2em;
   }
 
   .vff select {
-    font-size: .72em;
-    padding-top: .2em;
-    padding-bottom: .2em;
+    font-size: 0.72em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
   }
 
   .vff button {
@@ -926,16 +967,16 @@ header.vff-header svg.f-logo {
     width: 12px;
   }
 
-  .vff .fh2 span.f-sub, 
+  .vff .fh2 span.f-sub,
   .vff .fh2 span.f-tagline {
-    font-size: .64em;
+    font-size: 0.64em;
   }
 
   .vff span.f-tagline {
     line-height: 1.5;
   }
 
-  .vff span.f-text{
+  .vff span.f-text {
     margin-right: 0;
   }
 
@@ -945,8 +986,8 @@ header.vff-header svg.f-logo {
   }
 
   .vff ul.f-radios li,
-  .vff ul.f-radios li input[type=text] {
-    font-size: .62em;
+  .vff ul.f-radios li input[type="text"] {
+    font-size: 0.62em;
   }
 
   .vff .field-sectionbreaktype p {
@@ -956,10 +997,9 @@ header.vff-header svg.f-logo {
   .vff-footer .f-timer {
     font-size: 16px;
   }
-
 }
 
-@media screen and (max-height:400px) {
+@media screen and (max-height: 400px) {
   .vff {
     margin-top: 12vh;
     min-height: 180px;
@@ -969,7 +1009,7 @@ header.vff-header svg.f-logo {
     position: static;
   }
 
-  .vff-footer{
+  .vff-footer {
     font-size: 15px;
   }
 
@@ -980,7 +1020,7 @@ header.vff-header svg.f-logo {
 
   .vff .f-radios-desc,
   .vff ul.f-radios li,
-  .vff ul.f-radios li input[type=text] {
+  .vff ul.f-radios li input[type="text"] {
     font-size: 14px;
   }
 
@@ -989,9 +1029,8 @@ header.vff-header svg.f-logo {
     font-size: 1.56em;
   }
 
-  .vff .fh2 span.f-sub, 
+  .vff .fh2 span.f-sub,
   .vff .fh2 span.f-tagline {
-    font-size: .6em;
+    font-size: 0.6em;
   }
-
 }
