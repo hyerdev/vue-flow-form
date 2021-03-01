@@ -50,6 +50,38 @@
           </slot>
         </div>
       </div>
+
+       <div class="hyer-navigation">
+        <div v-if="hyerNavitation" class="f-nav">
+          <a
+            class="f-prev"
+            href="#"
+            v-bind:class="{'f-disabled': activeQuestionIndex === 0 || submitted}"
+            v-on:click.prevent="goToPreviousQuestion()"
+            role="button"
+            v-bind:aria-label="language.ariaPrev"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="113.007" height="166.837" viewBox="0 0 113.007 166.837"><g transform="translate(-7.532 0)"><g transform="translate(7.532 0)"><path d="M108.809,166.837a13.064,13.064,0,0,1-8.3-2.825L10.969,90.247c-4.583-3.775-4.583-9.885,0-13.66L100.511,2.831a13.567,13.567,0,0,1,16.59,0c4.583,3.775,4.583,9.89,0,13.66L35.845,83.417,117.1,150.342a8.514,8.514,0,0,1,0,13.67A13.076,13.076,0,0,1,108.809,166.837Z" transform="translate(-7.532 0)"/></g></g></svg>
+          </a>
+
+          <a
+            class="f-next"
+            href="#"
+            v-bind:class="{'f-disabled': !isNextQuestionAvailable()}"
+            v-on:click.prevent="goToNextQuestion()"
+            role="button"
+            v-bind:aria-label="language.ariaNext"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="113.007" height="166.837" viewBox="0 0 113.007 166.837">
+              <g transform="translate(0)">
+                <g transform="translate(0 0)">
+                  <path d="M19.261,166.837a13.064,13.064,0,0,0,8.3-2.825L117.1,90.247c4.583-3.775,4.583-9.885,0-13.66L27.559,2.831a13.567,13.567,0,0,0-16.59,0c-4.583,3.775-4.583,9.89,0,13.66L92.225,83.417,10.969,150.342a8.514,8.514,0,0,0,0,13.67A13.076,13.076,0,0,0,19.261,166.837Z" transform="translate(-7.532 0)"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="vff-footer">
@@ -60,6 +92,7 @@
           </div>
           {{ language.percentCompleted.replace(':percent', percentCompleted) }}
         </div>
+        
         <div v-if="navigation" class="f-nav">
           <a
             class="f-prev"
@@ -158,6 +191,10 @@
       navigation: {
         type: Boolean, 
         default: true
+      },
+      hyerNavitation: {
+        type: Boolean, 
+        default: false
       },
       timer: {
         type: Boolean,
