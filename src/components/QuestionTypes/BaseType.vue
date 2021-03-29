@@ -36,7 +36,7 @@
     },
     mounted() {
       if (this.question.answer) {
-        this.dataValue = this.question.answer
+        this.dataValue = this.answer = this.question.answer
       } else if (this.question.multiple) {
         this.dataValue = []
       }
@@ -160,6 +160,7 @@
         return !this.question.required || this.hasValue
       }
     },
+    
     computed: {
       placeholder() {
         return this.question.placeholder || this.language.placeholder
